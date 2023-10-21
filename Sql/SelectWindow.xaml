@@ -1,0 +1,32 @@
+﻿<Window x:Class="SocialNetwork.SelectWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SocialNetwork"
+        mc:Ignorable="d"
+        Title="Вхід" Height="450" Width="800"
+        WindowState="Maximized"
+        Closed="Window_Closed">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.1*"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="0.1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.1*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="0.1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Column="1" Grid.Row="1" Background="CadetBlue" 
+                HorizontalAlignment="Center" Margin="50">
+            <Button Name="Register" Height="70" Width="250" Margin="150 50"
+                FontSize="25" Click="Register_Click">Зареєструватися</Button>
+            <Button Name="Login" Height="40" Width="100" 
+                FontSize="20" Click="Login_Click">Увійти</Button>
+            
+        </StackPanel>
+        <!--<ScrollViewer Grid.Row="1" Grid.Column="1"></ScrollViewer>-->
+    </Grid>
+</Window>
